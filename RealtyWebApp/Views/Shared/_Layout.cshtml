@@ -5,67 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+    <script src="https://use.fontawesome.com/c01405271e.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="~/Scripts/scripts.js"></script>
     <script src="~/Scripts/subscription.js"></script>
     <script src="~/Scripts/wow.js"></script>
     <script src="~/Scripts/jquery.magnific-popup.min.js"></script>
-    <script src="https://use.fontawesome.com/c01405271e.js"></script>
-    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
     <link href="~/Content/typicons/typicons.min.css" rel="stylesheet" />
-    <img src="~/Content/img/backgrounds/5.jpg" />
-
     <title>@ViewBag.Title - Realty Web App</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
 <body>
-    <div class="loader">
-        <div class="loader-img"></div>
-    </div>
+    <!-- Loader -->
+    @*<div class="loader">
+            <div class="loader-img"></div>
+        </div>*@
 
-    <div class="top-content">
-
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="body-content">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    @Html.ActionLink("Curtis Brock II", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Rent", "Index", "Home", new { onclick = "$.scrollTo('#call-to-action', 750);return false; " })</li>
-                        <li>@Html.ActionLink("Sell", "About", "Home", new { onclick = "$.scrollTo('#always-beautiful', 750);return false; " })</li>
-                        <li>@Html.ActionLink("About", "Contact", "Home", new { onclick = "$.scrollTo('#about-us', 750);return false; " })</li>
-                        <li>@Html.ActionLink("Testimonials", "Contact", "Home", new { onclick = "$.scrollTo('#testimonials', 750);return false; " })</li>
-                        <li>@Html.ActionLink("Contact Us", "Contact", "Home", new { onclick = "$.scrollTo('#Contact-Us', 750);return false; " })</li>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="body-content">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Curtis Brock II", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Rent", "Index", "Home", new { onclick = "$.scrollTo('#call-to-action', 750);return false; " })</li>
+                    <li>@Html.ActionLink("Sell", "Index", "Home", new { onclick = "$.scrollTo('#always-beautiful', 750);return false; " })</li>
+                    <li>@Html.ActionLink("About", "Index", "Home", new { onclick = "$.scrollTo('#about-us', 750);return false; " })</li>
+                    <li>@Html.ActionLink("Testimonials", "Index", "Home", new { onclick = "$.scrollTo('#testimonials', 750);return false; " })</li>
+                    <li>@Html.ActionLink("Contact Us", "Index", "Home", new { onclick = "$.scrollTo('#Contact-Us', 750);return false; " })</li>
 
 
-                        @* <li><a data-toggle="modal" data-target="#myModalForm">Connect</a></li>*@
-                        @*<li>@Html.ActionLink("Resume", "Contact", "Home", new {file =( ("resume.pdf");) })</li>*@
-                    </ul>
-                </div>
+                    @* <li><a data-toggle="modal" data-target="#myModalForm">Connect</a></li>*@
+                    @*<li>@Html.ActionLink("Resume", "Contact", "Home", new {file =( ("resume.pdf");) })</li>*@
+                </ul>
+                @Html.Partial("_LoginPartial")
             </div>
         </div>
-        <div class="container body-content">
-            @RenderBody()
-            <hr />
-            <footer>
-                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-            </footer>
-        </div>
+    </div>
 
-        @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
-        <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>');</script>
+    <div class="body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
 
-        <script src="~/Scripts/jquery.backstretch.min.js"></script>
-        @RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>');</script>
+    <script src="~/Scripts/jquery.backstretch.min.js"></script>
+    @RenderSection("scripts", required: false)
 </body>
 </html>

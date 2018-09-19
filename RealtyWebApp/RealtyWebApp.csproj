@@ -299,6 +299,10 @@
     <Content Include="Scripts\subscription.js" />
     <Content Include="Scripts\wow.js" />
     <Content Include="Scripts\wow.min.js" />
+    <Content Include="Views\partner\index.html" />
+    <Content Include="Views\partner\partner.js" />
+    <Content Include="Views\partner\partner.php" />
+    <Content Include="Views\search\index.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
