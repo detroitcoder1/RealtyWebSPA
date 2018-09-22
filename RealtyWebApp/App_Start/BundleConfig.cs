@@ -24,6 +24,10 @@ namespace RealtyWebApp
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/style.css",
+                      "~/Content/demo_style.css",
+                      "~/Content/form-Elements.css",
+                      "~/Content/magnific-popup.css",
                       "~/Content/site.css"));
         }
     }

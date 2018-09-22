@@ -122,6 +122,8 @@ C:\Users\Curt\Source\Repos\RealtyWebSPA\RealtyWebApp\bin\Microsoft.AI.WindowsSer
 C:\Users\Curt\Source\Repos\RealtyWebSPA\RealtyWebApp\bin\Microsoft.AI.Web.xml
 C:\Users\Curt\Source\Repos\RealtyWebSPA\RealtyWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Curt\Source\Repos\RealtyWebSPA\RealtyWebApp\obj\Debug\RealtyWebApp.csprojAssemblyReference.cache
+C:\Users\Curt\Source\Repos\RealtyWebSPA\RealtyWebApp\obj\Debug\RealtyWebApp.Migrations.Customer.resources
+C:\Users\Curt\Source\Repos\RealtyWebSPA\RealtyWebApp\obj\Debug\RealtyWebApp.csproj.GenerateResource.cache
 C:\Users\Curt\Source\Repos\RealtyWebSPA\RealtyWebApp\obj\Debug\RealtyWebApp.csproj.CoreCompileInputs.cache
 C:\Users\Curt\Source\Repos\RealtyWebSPA\RealtyWebApp\obj\Debug\RealtyWebApp.csproj.CopyComplete
 C:\Users\Curt\Source\Repos\RealtyWebSPA\RealtyWebApp\obj\Debug\RealtyWebApp.dll
