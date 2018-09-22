@@ -1,0 +1,88 @@
+.demo-banner
+{
+    margin-top:10px;
+    background-image: url("img/backgrounds/1.jpg");
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    background-size: cover;
+    height:max-content;       
+}
+
+
+.demo-text 
+{
+    color: #fff;
+    font-size:40px;
+    font-weight:600;
+    padding-top:200px;
+    padding-left:35px;
+}
+
+
+
+
+.bigSide{
+    margin-top: 50px; 
+}
+
+
+
+.littleSide{
+    border-style: solid; 
+    border-radius: 5px;
+    border-color: #7B7B7B;  
+    border-width: 1px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding-bottom: 50px;
+}
+
+.glyphicon-arrow-right {
+    background-color: #e9322d;
+    font-size: 20px;
+}
+
+div.ws-invalid input {
+    border-color: #c88;
+}
+.ws-invalid label {
+    color: #933;
+}
+div.ws-success input {
+    border-color: #8c8;
+}
+
+form {
+    margin: 10px auto;
+    /*    max-width: 400px;
+        min-width: 220px;*/
+}
+.form-group {
+    padding: 5px 10px;
+}
+.label {
+    display: block;
+    margin: 3px 0;
+}
+.form-group input {
+   
+    padding: 30px 1px;
+    border: 1px solid #ccc;
+    box-shadow: none;
+}
+
+.checkbox{
+    position: absolute;
+
+}
+
+input[type=checkbox] {
+
+    vertical-align: bottom;
+    position: relative;
+    top: 13px;
+    *overflow: hidden;
+}
+
+.error{ color:red;}

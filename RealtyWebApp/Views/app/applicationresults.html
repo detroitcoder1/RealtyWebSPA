@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Rental Application</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link href="../assets/css/demo_style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="../assets/css/style.css" >
+        <link rel="shortcut icon" href="http://iheartagent.com/images/favicon.ico" type="image/ico" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    </head>
+    <body class="adblazer" ng-app="myApp">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="collapse navbar-collapse" id="myNavbar">
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#contact">313-808-8849</a></li>                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        
+        <div class="container">
+            <div class="row">
+                
+                <div class ="bigSide col-lg-12">
+                    <h1>Rental Application</h1>
+                    <form action="" class="form-horizontal ws-validate" id="partner_form"  method="POST">
+
+                        <div class="form-group" class="col-md-10">
+
+                            <label for="PropertyAddress" class="control-label">Property Address</label>
+                            <input type="text" class="form-control" name="PropertyAddress" id="PropertyAddress" placeholder="Property Address" required/>   
+                        </div>
+
+                        <div  class=" littleSide form-group row">
+                            <h3>Applicant Info.</h3>
+                            <div class="col-md-6">
+                                <label for="FirstName" class="control-label"> Applicant First Name</label>
+                                <input type="text" class="form-control" name="FirstName" id="FirstName" placeholder="First Name" required/>   
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="LastName" class="control-label"> Applicant Last Name</label>
+                                <input type="text" class="form-control" name="LastName" id="LastName" placeholder="Last Name" required/>   
+                            </div>
+
+
+                            <div class=" col-md-4">
+                                <label for="phone" class="control-label">Phone Number</label>
+                                <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number"/>   
+                            </div>
+
+
+                            <div class=" col-md-4">
+                                <label for="SSN" class="control-label"> Applicant SSN</label>
+                                <input type="text" class="form-control" name="SSN" id="SSN" placeholder="SSN"/>   
+                            </div>
+                                                    <div class=" col-md-4">
+                            <label for="debt" class="control-label">Debt/obligations</label>
+                            <input type="text" class="form-control" name="debt" id="debt" placeholder="debt/obligations" required/>   
+                        </div>  
+                        </div>
+                        <div  class=" littleSide form-group row">
+                            <div class=" col-md-4">
+                                <label for="FirstName2" class="control-label">Co-Applicant First Name</label>
+                                <input type="text" class="form-control" name="FirstName2" id="FirstName2" placeholder="First Name"required/>   
+                            </div>
+
+                            <div class=" col-md-4">
+                                <label for="LastName2" class="control-label"> Co-Applicant Last Name</label>
+                                <input type="text" class="form-control" name="LastName2" id="LastName2" placeholder="Last Name"required/>   
+                            </div>
+
+                            <div class=" col-md-4">
+                                <label for="SSN2" class="control-label"> Co-Applicant SSN</label>
+                                <input type="text" class="form-control" name="SSN2" id="SSN2" placeholder="SSN"required/>   
+                            </div>
+                        </div>
+                        <div  class=" littleSide form-group row">
+                            <div class=" col-md-6">
+                                <label for="occupants" class="control-label">Other Occupants</label>
+                                <input type="text" class="form-control" name="occupants" id="occupants" placeholder="occupants"required/>   
+                            </div>
+
+                            <div class=" col-md-6">
+                                <label for="pets" class="control-label">List any Pets</label>
+                                <input type="text" class="form-control" name="pets" id="pets" placeholder="Pets"required/>   
+                            </div>
+                        </div>
+ <div  class=" littleSide form-group row">
+                        <div class=" col-md-4">
+                            <label for="previousAddress" class="control-label">Previous Address</label>
+                            <input type="text" class="form-control" name="previousAddress" id="previousAddress" placeholder="Previous Address"required/>   
+                        </div>
+ 
+                        <div class=" col-md-4">
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="owned" id="owned" > Owned</label>
+                                <label><input type="checkbox" name="leased" id="leased"> Leased</label>
+                            </div>   
+
+                        </div>
+
+                        <div class=" col-md-4">
+                            <label for="monthlyPayment" class="control-label">Monthly Payment</label>
+                            <input type="text" class="form-control" name="monthlyPayment" id="monthlyPayment" placeholder="Monthly Payment" required/>   
+                        </div>
+</div>
+                        <div  class=" littleSide form-group row">
+                        <div class=" col-md-4">
+                            <label for="occupation" class="control-label">Occupation</label>
+                            <input type="text" class="form-control" name="occupation" id="occupation" placeholder="Occupation" required/>   
+                        </div>
+
+                        <div class=" col-md-4">
+                            <label for="employer" class="control-label">Employer</label>
+                            <input type="text" class="form-control" name="employer" id="employer" placeholder="Employer" required/>   
+                        </div>
+
+                        <div class=" col-md-4">
+                            <label for="employerName" class="control-label">Employer Name</label>
+                            <input type="text" class="form-control" name="employerName" id="employerName" placeholder="Employer Name" required/>   
+                        </div>
+
+                        <div class=" col-md-4">
+                            <label for="employerAddress" class="control-label">Employer Address</label>
+                            <input type="text" class="form-control" name="employerAddress" id="employerAddress" placeholder="Employer Address" required/>   
+                        </div>
+
+                        <div class=" col-md-4">
+                            <label for="employerPhone" class="control-label">Employer Phone</label>
+                            <input type="text" class="form-control" name="employerPhone" id="employerPhone" placeholder="Employer Phone" required/>   
+                        </div>
+
+                        <div class=" col-md-4">
+                            <label for="employedLength" class="control-label">How Long</label>
+                            <input type="text" class="form-control" name="employedLength" id="employedLength" placeholder="How Long" required/>   
+                        </div>
+                            
+                            
+
+                        <div class=" col-md-4">
+                            <label for="annualIncome" class="control-label">Annual Income</label>
+                            <input type="text" class="form-control" name="annualIncome" id="annualIncome" placeholder="Annual Income" required/>   
+                        </div>
+
+                        <div class=" col-md-4">
+                            <label for="otherIncome" class="control-label">Other Income</label>
+                            <input type="text" class="form-control" name="otherIncome" id="otherIncome" placeholder="Other Income" required/>   
+                        </div>
+                            </div>
+
+ 
+                        
+                        <div  class=" littleSide form-group row">
+
+                        <div class=" col-md-6">
+                            <label for="reference" class="control-label">Reference</label>
+                            <input type="text" class="form-control" name="reference" id="reference" placeholder="Reference" required/>   
+                        </div>
+
+                        <div class=" col-md-6">
+                            <label for="referencePhone" class="control-label">Reference Phone</label>
+                            <input type="text" class="form-control" name="referencePhone" id="referencePhone" placeholder="Reference Phone" required/>   
+                        </div>   
+                        <div class=" col-md-6">
+                            <label for="reference" class="control-label">Reference</label>
+                            <input type="text" class="form-control" name="reference2" id="reference2" placeholder="Reference" required/>   
+                        </div>
+
+                        <div class=" col-md-6">
+                            <label for="referencePhone2" class="control-label">Reference Phone</label>
+                            <input type="number" class="form-control" name="referencePhone2" id="referencePhone2" placeholder="Reference Phone" required/>   
+                        </div>                        
+</div>
+                        <div  class=" littleSide form-group row">
+                        <div class=" col-md-12">
+                            <h3>Applicant warrants that the preceding application is a complete and accurate representation of the facts. </h3>   
+                        </div>
+                        
+
+                        <div class=" col-md-12">
+                            <label for="signature" class="control-label">Applicant Signature</label>
+                            <input type="text" class="form-control" name="signature" id="signature" placeholder="Applicant Signature" required/>   
+                        </div>
+
+                        <div class="col-md-12 ">
+                            <label for="email" class="control-label">Email*</label>
+                            <input type="text" class="form-control" name="email" id="email" placeholder="Email" required />
+                            <div class="ws-errorbox" hidden="">
+                                <p>Please enter your email.</p>
+                            </div>
+                        </div>
+                           
+
+                        <div id="errormessage" class='error'></div>
+                        
+
+</div>
+                                                <div class=" col-md-12" >
+                            <button type="submit" class="btn btn-primary btn-lg">Apply</button>
+                             <p></p>
+                        </div> 
+                    </form>                  
+                </div>
+            </div>
+        </div>
+        <script src="partner.js" type="text/javascript"></script>
+    </body>
+</html>
