@@ -59,7 +59,7 @@ form {
         min-width: 220px;*/
 }
 .form-group {
-    padding: 5px 10px;
+    padding: 5px 30px;
 }
 .label {
     display: block;
@@ -67,7 +67,7 @@ form {
 }
 .form-group input {
    
-    padding: 30px 1px;
+    /*padding: 1px 1px;*/
     border: 1px solid #ccc;
     box-shadow: none;
 }
